@@ -1,7 +1,7 @@
 # docker-cert-asterisk-13.13
 Dockerfile for building [Asterisk][github/asterisk].
 
-This Dockerfile currently builds Centos "7" release.  It configures Asterisk 
+This Dockerfile currently builds Centos "7" release.  It configures Asterisk "13.13-cert-2"  
 using the configs from `asterisk/configs/samples`.
 
 ## USAGE
