@@ -34,4 +34,4 @@ RUN yum remove -y automake bzip2 gcc-c++ patch ncurses-devel openssl-devel \
   gmime-devel \
   && yum clean all -y \
   && rm -rf /usr/src/*
-CMD ["/usr/sbin/asterisk", "-fvvvvvv"]
+CMD ["/usr/sbin/asterisk", "-f"]
