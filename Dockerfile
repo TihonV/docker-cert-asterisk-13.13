@@ -22,8 +22,7 @@ RUN ./configure --with-pjproject-bundled CFLAGS='-g -O2 -mtune=native' \
   --without-asound --without-bluetooth --without-mysqlclient --without-oss \
   --without-suppserv --without-tds --without-vpb --without-x11
 COPY menuselect.makeopts /usr/src/asterisk-certified-13.13-cert2/menuselect.makeopts
-RUN make
-RUN make install
+RUN make && make install
 WORKDIR /tmp/
 RUN yum remove -y automake bzip2 gcc-c++ patch ncurses-devel openssl-devel \
   libxml2-devel libcurl-devel libogg-devel libvorbis-devel speex-devel \
