@@ -33,5 +33,5 @@ RUN yum remove -y automake bzip2 gcc-c++ patch ncurses-devel openssl-devel \
   subversion git libxslt-devel python-devel wget jansson-devel \
   gmime-devel \
   && yum clean all -y \
-  && rm -rf /usr/src/*
+  && rm -rf /usr/src/asterisk-*
 CMD ["/usr/sbin/asterisk", "-f"]
